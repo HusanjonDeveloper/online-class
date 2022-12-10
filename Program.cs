@@ -1,4 +1,5 @@
 ﻿
+using online_class.classes;
 System.Console.WriteLine("Int oop");
 
 System.Console.WriteLine("Enter yuour name");
@@ -13,6 +14,8 @@ System.Console.WriteLine("Converting...");
 
 int age = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine($"Successtully converting {age}");
+
+Animals Kescha = new Animals();
 
 int kaschasAge = 3;
 int ageDifference = age - kaschasAge;
