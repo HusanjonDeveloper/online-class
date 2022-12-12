@@ -57,7 +57,10 @@ class Programm
 
         for (int iterator = 1; iterator <= 10; iterator++)
         {
-            System.Console.WriteLine(iterator);
+            for (int iteratorr = 1; iteratorr <= 10; iteratorr++)
+            {
+                System.Console.WriteLine($"{iterator} x {iteratorr} = {iterator * iteratorr}");
+            }
         }
 
 
