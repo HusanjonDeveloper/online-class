@@ -31,7 +31,7 @@ class Programm
 
         int ageDifference = age - kaschasAge;
 
-        System.Console.WriteLine($"The difference between your and kescha's age is{ageDifference}");
+        System.Console.WriteLine($"The difference between your and kescha's age is {ageDifference}");
 
         if (age > kaschasAge)
         {
@@ -62,9 +62,7 @@ class Programm
 
         for (int i = 0; i < friendsName.Length; i++)
         {
-            System.Console.WriteLine($"{friendsName[0]} is {friendsAge[0]} year old!");
-            System.Console.WriteLine($"{friendsName[1]} is {friendsAge[1]} year old!");
-            System.Console.WriteLine($"{friendsName[2]} is {friendsAge[2]} year old!");
+            System.Console.WriteLine($"{friendsName[i]} is {friendsAge[i]} year old!");
 
         }
 
