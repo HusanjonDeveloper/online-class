@@ -58,15 +58,24 @@ class Programm
         friendsName[1] = "Vasya";
         friendsName[2] = name;
         int[] friendsAge = { 23, 31, age };
-
-        System.Console.WriteLine($"{friendsName[0]} is {friendsAge[0]}");
-        System.Console.WriteLine($"{friendsName[1]} is {friendsAge[1]}");
-        System.Console.WriteLine($"{friendsName[2]} is {friendsAge[2]}");
-
-        foreach (string friendName in friendsName)
+        /*
+       System.Console.WriteLine($"{friendsName[0]} is {friendsAge[0]}");
+       System.Console.WriteLine($"{friendsName[1]} is {friendsAge[1]}");
+       System.Console.WriteLine($"{friendsName[2]} is {friendsAge[2]}");
+        */
+        for (int i = 0; i < friendsName.Length; i++)
         {
-            System.Console.WriteLine(friendName);
+            System.Console.WriteLine($"{friendsName[0]} is {friendsAge[0]} year old!");
+            System.Console.WriteLine($"{friendsName[1]} is {friendsAge[1]} year old!");
+            System.Console.WriteLine($"{friendsName[2]} is {friendsAge[2]} year old!");
+
         }
+        /*     
+        foreach (string friendName in friendsName)
+       {
+           System.Console.WriteLine(friendName);
+       }
+       */
 
         Console.ReadKey();
     }
