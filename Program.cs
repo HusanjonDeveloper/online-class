@@ -63,6 +63,11 @@ class Programm
         System.Console.WriteLine($"{friendsName[1]} is {friendsAge[1]}");
         System.Console.WriteLine($"{friendsName[2]} is {friendsAge[2]}");
 
+        foreach (string friendName in friendsName)
+        {
+            System.Console.WriteLine(friendName);
+        }
+
         Console.ReadKey();
     }
 }
