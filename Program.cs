@@ -47,21 +47,26 @@ class Program
         }
         System.Console.WriteLine("Let me tell you about my friends");
 
-        string[] friendsName = new string[3];
-        friendsName[0] = "Kescha";
-        friendsName[1] = "Vasya";
-        friendsName[2] = name;
+        string[] friendsName = { "Kasya", "Vasya", name };
         int[] friendsAge = { 23, 31, age };
-        for (int i = 0; i < friendsName.Length; i++)
-        {
-            System.Console.WriteLine($"{friendsName[i]} is {friendsAge[i]} your old!");
-        }
 
-        foreach (string frendName in friendsName)
-        {
-            System.Console.WriteLine(frendName);
+        System.Console.WriteLine($"{friendsName[0]} is {friendsAge[0]} year old!");
+        System.Console.WriteLine($"{friendsName[1]} is {friendsAge[1]} year old!");
+        System.Console.WriteLine($"{friendsName[2]} is {friendsAge[2]} year old!");
 
-        }
+        /*
+       for (int i = 0; i < friendsName.Length; i++)
+       {
+           System.Console.WriteLine($"{friendsName[i]} is {friendsAge[i]} your old!");
+       }
+
+       foreach (string frendName in friendsName)
+       {
+           System.Console.WriteLine(frendName);
+
+       }
+       */
+
         Console.ReadKey();
     }
 }
