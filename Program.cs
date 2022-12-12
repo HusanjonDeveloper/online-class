@@ -32,30 +32,11 @@ class Program
 
         System.Console.WriteLine($"The difference between your and kescha's age is{ageDifference}");
 
-        if (age > kaschasAge)
-        {
-            System.Console.WriteLine("you are older!");
-        }
-        else if (age == kaschasAge)
-        {
-            System.Console.WriteLine("you are equal!");
-        }
-        else
-        {
-            System.Console.WriteLine("you are younger!");
-        }
+        Animals animals = new Animals();
 
-        System.Console.WriteLine("Let me tell you about my friends");
+        animals.IFTEACH();
 
-        string[] friendsName = new string[3];
-        friendsName[0] = "Kescha";
-        friendsName[1] = "Vasya";
-        friendsName[2] = name;
-        int[] friendsAge = { 23, 31, age };
 
-        for (int i = 1; i < friendsName.Length; i++)
-        {
-            System.Console.WriteLine($"{friendsName[i]} is {friendsAge[i]} your old!");
-        }
+        Console.ReadKey();
     }
 }
