@@ -19,10 +19,11 @@ class Programm
         System.Console.WriteLine(greeting);
 
         System.Console.WriteLine("Enter your Age");
-        string ageAsString = Console.ReadLine();
-        System.Console.WriteLine("Converting...");
 
-        int age = Convert.ToInt32(Console.ReadLine());
+        string ageAsString = Console.ReadLine();
+        System.Console.WriteLine($"Converting...");
+
+        int age = Convert.ToInt32(ageAsString);
         System.Console.WriteLine($"Successtully converting {age}");
 
 
