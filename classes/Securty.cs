@@ -9,6 +9,7 @@ namespace online_class.classes
             {
                 System.Console.WriteLine("Enter Password");
                 Password = Console.ReadLine();
+                Console.Clear();
             } while (Password != "0");
         }
     }
