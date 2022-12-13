@@ -1,4 +1,5 @@
-﻿using System;
+﻿// Kescha
+using System;
 using online_class.classes;
 class Programm
 {
