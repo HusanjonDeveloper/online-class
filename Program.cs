@@ -20,7 +20,7 @@ class Programm
         int age = Convert.ToInt32(agesString);
         System.Console.WriteLine($"SECCUSSFULLY CONVERTED! {age}");
 
-        Animal kescha = new Animal(userAge: age, animalAge: 3);
+        Animal kescha = new Animal(name: "kescha", userAge: age, animalAge: 3);
         kescha.Age = 3;
 
         System.Console.WriteLine(kescha.Name);
