@@ -2,24 +2,24 @@ namespace online_class.classes
 {
     class Animal
     {
-        private int age;
+        public string Name { get; set; }
 
-        public int Age
+        public int Age { get; set; }
+
+        public int AgeDifference { get; set; }
+
+        public Animal()
         {
-            get
-            {
-                return age;
-            }
-            set
-            {
-                if (value > 0)
+            Name = "No name";
+            Age = 0;
+            AgeDifference = 0;
 
-                {
-                    age = value;
-
-                }
-            }
-
+        }
+        public Animal(int userAge, int animalAge)
+        {
+            Name = "No name";
+            Age = animalAge;
+            AgeDifference = userAge - animalAge;
         }
 
     }
