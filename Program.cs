@@ -20,19 +20,19 @@ class Programm
         int age = Convert.ToInt32(agesString);
         System.Console.WriteLine($"sECCUSSFULLY CONVERTED! {age}");
 
-        Animal animal = new Animal();
-        int keschasAge = 3;
+        Animal kescha = new Animal();
+        kescha.Age = 3;
 
-        int ageDiference = age - keschasAge;
+        int ageDiference = age - kescha.Age;
 
         System.Console.WriteLine($"the difference between your and kescha's age is {ageDiference}");
 
-        if (age > keschasAge)
+        if (age > kescha.Age)
 
         {
             System.Console.WriteLine("you are old ! ");
         }
-        else if (age == keschasAge)
+        else if (age == kescha.Age)
         {
             System.Console.WriteLine("you are equal !");
         }
