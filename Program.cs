@@ -25,6 +25,23 @@ class Programm
 
         System.Console.WriteLine($"the difference between your and kescha's age is {ageDiference}");
 
+        if (age > keschasAge)
+
+        {
+            System.Console.WriteLine("you are old ! ");
+        }
+        else if (age == keschasAge)
+        {
+            System.Console.WriteLine("you are equal !");
+        }
+        else
+        {
+            System.Console.WriteLine("you are yourger !");
+        }
+
+        System.Console.WriteLine("Let me Tell about my friends");
+
+
 
         Console.ReadKey();
     }
