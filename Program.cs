@@ -20,6 +20,7 @@ class Programm
         int age = Convert.ToInt32(agesString);
         System.Console.WriteLine($"sECCUSSFULLY CONVERTED! {age}");
 
+        Animal animal = new Animal();
         int keschasAge = 3;
 
         int ageDiference = age - keschasAge;
