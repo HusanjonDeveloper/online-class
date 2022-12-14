@@ -48,6 +48,21 @@ namespace online_class.classes
             }
 
         }
+        public void TellAboutFrends(int userAge, string userName)
+        {
+            System.Console.WriteLine("Let me Tell about my friends");
+
+            string[] friendsName = new string[3];
+            friendsName[0] = "Kescha";
+            friendsName[1] = "Vasya";
+            friendsName[2] = userName;
+            int[] friendsAge = { 17, 15, userAge };
+
+            for (int i = 0; i < friendsName.Length; i++)
+            {
+                System.Console.WriteLine($"{friendsName[i]} is {friendsAge[i]} year old !");
+            }
+        }
 
         private int CalculateageDifference(int userAge, int animalAge)
         {
