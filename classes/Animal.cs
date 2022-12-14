@@ -10,15 +10,29 @@ namespace online_class.classes
 
         public Animal()
         {
-            Name = "No name";
+            Name = "No Name";
             Age = 0;
             AgeDifference = 0;
 
         }
-        public Animal(int userAge, int animalAge)
+
+        public Animal(
+            string name,
+            int userAge,
+             int animalAge)
         {
-            Name = "No name";
+            Name = "kescha";
             Age = animalAge;
+            CalculateageDifferenceWhitNoReturn(userAge, animalAge);
+            //AgeDifference = CalculateageDifference(userAge, animalAge);
+        }
+
+        private int CalculateageDifference(int userAge, int animalAge)
+        {
+            return userAge - animalAge;
+        }
+        private void CalculateageDifferenceWhitNoReturn(int userAge, int animalAge)
+        {
             AgeDifference = userAge - animalAge;
         }
 
