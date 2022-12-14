@@ -26,6 +26,28 @@ namespace online_class.classes
             CalculateageDifferenceWhitNoReturn(userAge, animalAge);
             //AgeDifference = CalculateageDifference(userAge, animalAge);
         }
+        public void PrintAgeDifference()
+        {
+            Console.WriteLine($"the difference between your and {Name}'s age is {AgeDifference}");
+
+        }
+        public void ConpareAges(int userAge)
+        {
+            if (userAge > Age)
+
+            {
+                Console.WriteLine("you are old ! ");
+            }
+            else if (userAge == Age)
+            {
+                Console.WriteLine("you are equal !");
+            }
+            else
+            {
+                Console.WriteLine("you are yourger !");
+            }
+
+        }
 
         private int CalculateageDifference(int userAge, int animalAge)
         {
