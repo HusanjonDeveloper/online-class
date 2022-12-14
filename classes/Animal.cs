@@ -75,6 +75,10 @@ namespace online_class.classes
         public void Greeting(string userName)
         {
             System.Console.WriteLine($"Hello {userName}");
+            if (userName == "")
+            {
+                userName = "No name";
+            }
         }
         private int CalculateageDifference(int userAge, int animalAge)
         {

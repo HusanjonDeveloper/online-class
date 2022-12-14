@@ -8,6 +8,8 @@ class Programm
         Securty securty = new Securty();
         securty.checkedPassword();
 
+        Animal kescha = new Animal(name: "kescha", age: 3);
+
         System.Console.WriteLine("Enter your name");
         string userName = Console.ReadLine();
 
@@ -21,12 +23,12 @@ class Programm
         int userAge = Convert.ToInt32(agesString);
         System.Console.WriteLine($"SECCUSSFULLY CONVERTED! {userAge}");
 
-        Animal kescha = new Animal(name: "kescha", age: 3);
+
 
         kescha.CalculateageDifferenceWhitNoReturn(userAge);
         kescha.PrintAgeDifference();
         kescha.ConpareAges(userAge);
-        kescha.TellAboutFrends(userName, userAge);
+        kescha.TellAboutFrends(userAge, userName);
         Console.ReadKey();
     }
 }
