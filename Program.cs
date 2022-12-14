@@ -9,27 +9,24 @@ class Programm
         securty.checkedPassword();
 
         System.Console.WriteLine("Enter your name");
-        string name = Console.ReadLine();
+        string userName = Console.ReadLine();
 
-        string greeting = $"Hello{name}";
+        kescha.Greeting(userName);
+
         System.Console.WriteLine("Enter your age");
         string agesString = Console.ReadLine();
 
         System.Console.WriteLine("Converting...");
 
-        int age = Convert.ToInt32(agesString);
-        System.Console.WriteLine($"SECCUSSFULLY CONVERTED! {age}");
+        int userAge = Convert.ToInt32(agesString);
+        System.Console.WriteLine($"SECCUSSFULLY CONVERTED! {userAge}");
 
-        Animal kescha = new Animal(name: "kescha", userAge: age, animalAge: 3);
-        kescha.Age = 3;
+        Animal kescha = new Animal(name: "kescha", age: 3);
 
-        System.Console.WriteLine(kescha.Name);
-        System.Console.WriteLine(kescha.Age);
-
-
+        kescha.CalculateageDifferenceWhitNoReturn(userAge);
         kescha.PrintAgeDifference();
-        kescha.ConpareAges(userAge: age);
-        kescha.TellAboutFrends(userName: name, userAge: age);
+        kescha.ConpareAges(userAge);
+        kescha.TellAboutFrends(userName, userAge);
         Console.ReadKey();
     }
 }

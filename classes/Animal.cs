@@ -7,13 +7,17 @@ namespace online_class.classes
         public int Age { get; set; }
 
         public int AgeDifference { get; set; }
-
         public Animal()
         {
             Name = "No Name";
             Age = 0;
             AgeDifference = 0;
 
+        }
+        public Animal(string name, int age)
+        {
+            Age = age;
+            Name = name;
         }
 
         public Animal(
@@ -64,6 +68,14 @@ namespace online_class.classes
             }
         }
 
+        public int CalculateageDifferenceWhitNoReturn(int userAge)
+        {
+            return userAge - Age;
+        }
+        public void Greeting(string userName)
+        {
+            System.Console.WriteLine($"Hello {userName}");
+        }
         private int CalculateageDifference(int userAge, int animalAge)
         {
             return userAge - animalAge;
