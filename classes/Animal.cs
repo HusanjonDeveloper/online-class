@@ -73,7 +73,7 @@ namespace online_class.classes
         {
             return userAge - Age;
         }
-        public void Greeting(string userName)
+        public virtual void Greeting(string userName)
         {
             Console.WriteLine($"Hello {userName}");
             if (userName == "")
