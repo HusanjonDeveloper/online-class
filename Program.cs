@@ -16,20 +16,24 @@ namespace online_class.classes
             Animal Kasee = new Pet(name: "Kasee", age: 5);
 
 
-            System.Console.WriteLine("Enter your name");
+            Console.WriteLine("Enter your name");
             string userName = Console.ReadLine();
+
+            Console.WriteLine("Kescha says:");
             kescha.Greeting(userName);
+
+            Console.WriteLine("kasee seys:");
             Kasee.Greeting(userName);
 
 
-            System.Console.WriteLine("Enter your age");
+            Console.WriteLine("Enter your age");
 
             string agesString = Console.ReadLine();
-            System.Console.WriteLine("Converting...");
+            Console.WriteLine("Converting...");
 
             int userAge = Convert.ToInt32(agesString);
 
-            System.Console.WriteLine($"SECCUSSFULLY CONVERTED! {userAge}");
+            Console.WriteLine($"SECCUSSFULLY CONVERTED! {userAge}");
 
             kescha.CalculateageDifferenceWhitNoReturn(userAge);
 
