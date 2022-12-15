@@ -23,8 +23,6 @@ class Programm
         int userAge = Convert.ToInt32(agesString);
         System.Console.WriteLine($"SECCUSSFULLY CONVERTED! {userAge}");
 
-
-
         kescha.CalculateageDifferenceWhitNoReturn(userAge);
         kescha.PrintAgeDifference();
         kescha.ConpareAges(userAge);
