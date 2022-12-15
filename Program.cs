@@ -1,32 +1,36 @@
 ﻿// Kescha
 using System;
 using online_class.classes;
-class Programm
+namespace online_class.classes
 {
-    static void Main(string[] args)
+    class Programm
     {
-        Securty securty = new Securty();
-        securty.checkedPassword();
+        static void Main(string[] args)
+        {
+            Securty securty = new Securty();
+            securty.checkedPassword();
 
-        Animal kescha = new Animal(name: "kescha", age: 3);
+            Animal kescha = new Animal(name: "kescha", age: 3);
+            Animal Kasee = new Animal(name: "Kasee", age: 5);
 
-        System.Console.WriteLine("Enter your name");
-        string userName = Console.ReadLine();
+            System.Console.WriteLine("Enter your name");
+            string userName = Console.ReadLine();
 
-        kescha.Greeting(userName);
+            kescha.Greeting(userName);
 
-        System.Console.WriteLine("Enter your age");
-        string agesString = Console.ReadLine();
+            System.Console.WriteLine("Enter your age");
+            string agesString = Console.ReadLine();
 
-        System.Console.WriteLine("Converting...");
+            System.Console.WriteLine("Converting...");
 
-        int userAge = Convert.ToInt32(agesString);
-        System.Console.WriteLine($"SECCUSSFULLY CONVERTED! {userAge}");
+            int userAge = Convert.ToInt32(agesString);
+            System.Console.WriteLine($"SECCUSSFULLY CONVERTED! {userAge}");
 
-        kescha.CalculateageDifferenceWhitNoReturn(userAge);
-        kescha.PrintAgeDifference();
-        kescha.ConpareAges(userAge);
-        kescha.TellAboutFrends(userAge, userName);
-        Console.ReadKey();
+            kescha.CalculateageDifferenceWhitNoReturn(userAge);
+            kescha.PrintAgeDifference();
+            kescha.ConpareAges(userAge);
+            kescha.TellAboutFrends(userAge, userName);
+            Console.ReadKey();
+        }
     }
 }
