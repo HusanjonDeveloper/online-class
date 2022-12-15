@@ -77,7 +77,7 @@ namespace online_class.classes
             System.Console.WriteLine($"Hello {userName}");
             if (userName == "")
             {
-                userName = "No name";
+                userName = "Onknown Person";
             }
         }
         private int CalculateageDifference(int userAge, int animalAge)
