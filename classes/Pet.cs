@@ -8,9 +8,15 @@ namespace online_class.classes
         {
 
         }
+
         public override void Greeting(string userName)
         {
             Console.WriteLine($" MEOW, {userName}");
+        }
+
+        public override void Greet2(string userName)
+        {
+            Console.WriteLine("Abstracted metod implamets");
         }
     }
 }

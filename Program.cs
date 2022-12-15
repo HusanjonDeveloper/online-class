@@ -9,6 +9,9 @@ namespace online_class.classes
     {
         static void Main(string[] args)
         {
+
+
+
             Securty securty = new Securty();
             securty.checkedPassword();
 
@@ -29,6 +32,9 @@ namespace online_class.classes
             Console.WriteLine("Enter your age");
 
             string agesString = Console.ReadLine();
+
+            Kasee.Greet2(userName);
+
             Console.WriteLine("Converting...");
 
             int userAge = Convert.ToInt32(agesString);

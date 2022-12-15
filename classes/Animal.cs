@@ -1,11 +1,13 @@
 using System;
 namespace online_class.classes
 {
-    public class Animal
+    public abstract class Animal
     {
+
         public string Name { get; set; }
 
         public int Age { get; set; }
+        public int Age2 { get; set; }
 
         public int AgeDifference { get; set; }
         public Animal()
@@ -31,6 +33,9 @@ namespace online_class.classes
             CalculateageDifferenceWhitNoReturn(userAge, animalAge);
             //AgeDifference = CalculateageDifference(userAge, animalAge);
         }
+
+        public abstract void Greet2(string userName);
+
         public void PrintAgeDifference()
         {
             Console.WriteLine($"the difference between your and {Name}'s age is {AgeDifference}");

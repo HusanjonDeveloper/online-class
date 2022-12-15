@@ -1,6 +1,7 @@
 using System;
 namespace online_class.classes
 {
+
     public class Bird : Animal
     {
         public Bird(string name, int age)
@@ -8,9 +9,15 @@ namespace online_class.classes
         {
 
         }
+
         public override void Greeting(string userName)
         {
             Console.WriteLine($"Hello,{userName}");
+        }
+
+        public override void Greet2(string userName)
+        {
+            Console.WriteLine();
         }
 
     }
