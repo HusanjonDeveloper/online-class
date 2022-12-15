@@ -7,7 +7,6 @@ namespace online_class.classes
         public string Name { get; set; }
 
         public int Age { get; set; }
-        public int Age2 { get; set; }
 
         public int AgeDifference { get; set; }
         public Animal()
@@ -36,10 +35,17 @@ namespace online_class.classes
 
         public abstract void Greet2(string userName);
 
-        public void PrintAgeDifference()
+        public void PrintAgeDifference(int userAge, int kescha)
         {
+            AgeDifference = userAge - kescha;
             Console.WriteLine($"the difference between your and {Name}'s age is {AgeDifference}");
 
+        }
+        public void AnimalsMullte(int kescha, int kasee)
+        {
+            int Age1;
+            Age1 = kescha - kasee;
+            Console.WriteLine($"age difference between animals age is {Age1}");
         }
         public void ConpareAges(int userAge)
         {
@@ -86,6 +92,7 @@ namespace online_class.classes
                 userName = "Onknown Person";
             }
         }
+
         private int CalculateageDifference(int userAge, int animalAge)
         {
             return userAge - animalAge;
@@ -94,6 +101,7 @@ namespace online_class.classes
         {
             AgeDifference = userAge - animalAge;
         }
+
 
     }
 }

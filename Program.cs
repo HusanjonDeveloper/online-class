@@ -15,8 +15,8 @@ namespace online_class.classes
             Securty securty = new Securty();
             securty.checkedPassword();
 
-            Animal kescha = new Bird(name: "kescha", age: 3);
-            Animal Kasee = new Pet(name: "Kasee", age: 5);
+            Animal kescha = new Bird(name: "kescha", age: 10);
+            Animal Kasee = new Pet(name: "Kasee", age: 8);
 
 
             Console.WriteLine("Enter your name");
@@ -43,7 +43,9 @@ namespace online_class.classes
 
             kescha.CalculateageDifferenceWhitNoReturn(userAge);
 
-            kescha.PrintAgeDifference();
+            kescha.PrintAgeDifference(userAge, kescha: 10);
+
+            kescha.AnimalsMullte(kescha: 10, kasee: 8);
 
             kescha.ConpareAges(userAge);
 
