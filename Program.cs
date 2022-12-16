@@ -10,8 +10,6 @@ namespace online_class.classes
         static void Main(string[] args)
         {
 
-
-
             Securty securty = new Securty();
             securty.checkedPassword();
 
