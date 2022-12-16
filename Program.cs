@@ -52,6 +52,7 @@ namespace online_class.classes
             kescha.TellAboutFrends(userAge, userName);
 
             Console.ReadKey();
+
         }
     }
 }

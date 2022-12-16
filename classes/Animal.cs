@@ -70,9 +70,9 @@ namespace online_class.classes
 
             string[] friendsName = new string[3];
             friendsName[0] = "Kescha";
-            friendsName[1] = "Vasya";
+            friendsName[1] = "kasee";
             friendsName[2] = userName;
-            int[] friendsAge = { 17, 15, userAge };
+            int[] friendsAge = { 10, 8, userAge };
 
             for (int i = 0; i < friendsName.Length; i++)
             {
