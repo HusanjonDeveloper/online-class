@@ -20,14 +20,14 @@ namespace online_class.classes
             Age = 0;
             AgeDifference = 0;
             Password = "0";
-            DataTime = DateTimeOffset.Now;
+            DataTime = DateTimeOffset.UtcNow;
 
         }
         public Animal(string name, int age)
         {
             Age = age;
             Name = name;
-            DataTime = DateTimeOffset.Now;
+            DataTime = DateTimeOffset.UtcNow;
         }
 
         public Animal(
@@ -39,7 +39,7 @@ namespace online_class.classes
             Age = animalAge;
             CalculateageDifferenceWhitNoReturn(userAge, animalAge);
             //AgeDifference = CalculateageDifference(userAge, animalAge);
-            DataTime = DateTimeOffset.Now;
+            DataTime = DateTimeOffset.UtcNow;
         }
 
         public abstract void Greet2(string userName);
