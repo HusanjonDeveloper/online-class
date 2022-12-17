@@ -9,47 +9,56 @@ namespace online_class.classes
     {
         static void Main(string[] args)
         {
+            try
+            {
+                Securty securty = new Securty();
+                securty.checkedPassword();
 
-            Securty securty = new Securty();
-            securty.checkedPassword();
-
-            Animal kescha = new Bird(name: "kescha", age: 10);
-            Animal Kasee = new Pet(name: "Kasee", age: 8);
-
-
-            Console.WriteLine("Enter your name");
-            string userName = Console.ReadLine();
-
-            Console.WriteLine("Kescha says:");
-            kescha.Greeting(userName);
-
-            Console.WriteLine("kasee seys:");
-            Kasee.Greeting(userName);
+                Animal kescha = new Bird(name: "kescha", age: 10);
+                Animal Kasee = new Pet(name: "Kasee", age: 8);
 
 
-            Console.WriteLine("Enter your age");
+                Console.WriteLine("Enter your name");
+                string userName = Console.ReadLine();
 
-            string agesString = Console.ReadLine();
+                Console.WriteLine("Kescha says:");
+                kescha.Greeting(userName);
 
-            Kasee.Greet2(userName);
+                Console.WriteLine("kasee seys:");
+                Kasee.Greeting(userName);
 
-            Console.WriteLine("Converting...");
 
-            int userAge = Convert.ToInt32(agesString);
+                Console.WriteLine("Enter your age");
 
-            Console.WriteLine($"SECCUSSFULLY CONVERTED! {userAge}");
+                string agesString = Console.ReadLine();
 
-            kescha.CalculateageDifferenceWhitNoReturn(userAge);
+                Kasee.Greet2(userName);
 
-            kescha.PrintAgeDifference(userAge, kescha: 10);
+                Console.WriteLine("Converting...");
 
-            kescha.AnimalsMullte(kescha: 10, kasee: 8);
+                int userAge = Convert.ToInt32(agesString);
 
-            kescha.ConpareAges(userAge);
+                Console.WriteLine($"SECCUSSFULLY CONVERTED! {userAge}");
 
-            kescha.TellAboutFrends(userAge, userName);
+                kescha.CalculateageDifferenceWhitNoReturn(userAge);
 
-            Console.ReadKey();
+                kescha.PrintAgeDifference(userAge, kescha: 10);
+
+                kescha.AnimalsMullte(kescha: 10, kasee: 8);
+
+                kescha.ConpareAges(userAge);
+
+                kescha.TellAboutFrends(userAge, userName);
+
+                Console.ReadKey();
+
+            }
+            catch (FormatException FormatException)
+            {
+                Console.WriteLine($"Error was thrown. Message:{FormatException.Message}");
+            }
+            Console.WriteLine("Program ended...");
+
 
         }
     }
