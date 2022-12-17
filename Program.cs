@@ -13,16 +13,17 @@ namespace online_class.classes
             {
                 Securty securty = new Securty();
                 securty.checkedPassword();
-
-                Animal kescha = new Bird(name: "kescha", age: 10);
+                Animal Kescha = new Bird(name: "kescha", age: 10);
                 Animal Kasee = new Pet(name: "Kasee", age: 8);
 
+                Console.WriteLine("Kescha was creted:" + Kescha.DataTime);
+                Console.WriteLine("Kasee was creted:" + Kasee.DataTime);
 
                 Console.WriteLine("Enter your name");
                 string userName = Console.ReadLine();
 
                 Console.WriteLine("Kescha says:");
-                kescha.Greeting(userName);
+                Kescha.Greeting(userName);
 
                 Console.WriteLine("kasee seys:");
                 Kasee.Greeting(userName);
@@ -40,15 +41,15 @@ namespace online_class.classes
 
                 Console.WriteLine($"SECCUSSFULLY CONVERTED! {userAge}");
 
-                kescha.CalculateageDifferenceWhitNoReturn(userAge);
+                Kescha.CalculateageDifferenceWhitNoReturn(userAge);
 
-                kescha.PrintAgeDifference(userAge, kescha: 10);
+                Kescha.PrintAgeDifference(userAge, kescha: 10);
 
-                kescha.AnimalsMullte(kescha: 10, kasee: 8);
+                Kescha.AnimalsMullte(kescha: 10, kasee: 8);
 
-                kescha.ConpareAges(userAge);
+                Kescha.ConpareAges(userAge);
 
-                kescha.TellAboutFrends(userAge, userName);
+                Kescha.TellAboutFrends(userAge, userName);
 
                 Console.ReadKey();
 

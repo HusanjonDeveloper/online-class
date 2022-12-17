@@ -9,17 +9,25 @@ namespace online_class.classes
         public int Age { get; set; }
 
         public int AgeDifference { get; set; }
+
+        public string Password { get; set; }
+
+        public DateTimeOffset DataTime { get; set; }
+
         public Animal()
         {
             Name = "No Name";
             Age = 0;
             AgeDifference = 0;
+            Password = "0";
+            DataTime = DateTimeOffset.Now;
 
         }
         public Animal(string name, int age)
         {
             Age = age;
             Name = name;
+            DataTime = DateTimeOffset.Now;
         }
 
         public Animal(
@@ -31,6 +39,7 @@ namespace online_class.classes
             Age = animalAge;
             CalculateageDifferenceWhitNoReturn(userAge, animalAge);
             //AgeDifference = CalculateageDifference(userAge, animalAge);
+            DataTime = DateTimeOffset.Now;
         }
 
         public abstract void Greet2(string userName);
@@ -39,7 +48,6 @@ namespace online_class.classes
         {
             AgeDifference = userAge - kescha;
             Console.WriteLine($"the difference between your and {Name}'s age is {AgeDifference}");
-
         }
         public void AnimalsMullte(int kescha, int kasee)
         {
