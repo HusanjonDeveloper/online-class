@@ -13,6 +13,7 @@ namespace online_class.classes
             {
                 Securty securty = new Securty();
                 securty.checkedPassword();
+
                 Animal Kescha = new Bird(name: "kescha", age: 10);
                 Animal Kasee = new Pet(name: "Kasee", age: 8);
 
