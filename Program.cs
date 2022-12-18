@@ -15,10 +15,14 @@ namespace online_class.classes
                 securty.checkedPassword();
 
                 Animal Kescha = new Bird(name: "kescha", age: 10);
-                Animal Kasee = new Pet(name: "Kasee", age: 8);
+                Pet Kasee = new Pet(name: "Kasee", age: 8);
+
+                Kasee.Type = PetType.Cat;
 
                 Console.WriteLine("Kescha was creted:" + Kescha.DataTime);
                 Console.WriteLine("Kasee was creted:" + Kasee.DataTime);
+
+                Console.WriteLine(Kasee.Type);
 
                 Console.WriteLine("Enter your name");
                 string userName = Console.ReadLine();

@@ -1,8 +1,8 @@
-using System;
 namespace online_class.classes
 {
     public class Pet : Animal
     {
+        public PetType Type { get; set; }
         public Pet(string name, int age)
         : base(name, age)
         {
