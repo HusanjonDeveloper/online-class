@@ -41,7 +41,20 @@ namespace online_class.classes
             //AgeDifference = CalculateageDifference(userAge, animalAge);
             DataTime = DateTimeOffset.UtcNow;
         }
+        public void PetTypeSwitch()
+        {
+            string[] Type = Enum.GetNames(typeof(PEtType));
+            foreach (var r in Type)
+            {
+                Console.WriteLine(r);
+            }
+            int[] values = (int[])Enum.GetValues(typeof(PetType));
+            foreach (var m in values)
+            {
+                Console.WriteLine(m);
 
+            }
+        }
         public abstract void Greet2(string userName);
 
         public void PrintAgeDifference(int userAge, int kescha)

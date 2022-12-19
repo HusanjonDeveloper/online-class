@@ -24,6 +24,9 @@ namespace online_class.classes
 
                 Console.WriteLine(Kasee.Type);
 
+                Kescha.PetTypeSwitch();
+
+
                 Console.WriteLine("Enter your name");
                 string userName = Console.ReadLine();
 
@@ -64,7 +67,6 @@ namespace online_class.classes
                 Console.WriteLine($"Error was thrown. Message:{FormatException.Message}");
             }
             Console.WriteLine("Program ended...");
-
 
         }
     }
