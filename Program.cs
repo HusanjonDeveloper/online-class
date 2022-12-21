@@ -1,5 +1,4 @@
 ﻿//Takrorlash Keschas    
-
 using System;
 using online_class.classes;
 
