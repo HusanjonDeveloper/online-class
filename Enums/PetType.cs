@@ -4,6 +4,6 @@ namespace online_class.classes
     {
         Cat,
         Dog,
-        Fish
+        Fish,
     }
 }
