@@ -9,6 +9,8 @@ class Programm
         Securty securty = new Securty();
         securty.checkedPassword();
 
+        Animals kescha = new Animals();
+
         System.Console.WriteLine("Enter your Name:");
         string name = Console.ReadLine();
 
@@ -23,17 +25,17 @@ class Programm
         int age = Convert.ToInt32(ageAsString);
         System.Console.WriteLine($"Successfully converted! {age}");
 
-        int keschaAge = 3;
+        kescha.Age = 3;
 
-        int AgeDifference = age - keschaAge;
+        int AgeDifference = age - kescha.Age;
 
         System.Console.WriteLine($"the difference between you and kescha's age is {AgeDifference}");
 
-        if (age > keschaAge)
+        if (age > kescha.Age)
         {
             System.Console.WriteLine("you are older!");
         }
-        else if (age == keschaAge)
+        else if (age == kescha.Age)
         {
             System.Console.WriteLine("You are equal!");
         }
