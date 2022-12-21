@@ -10,9 +10,9 @@ class Programm
         securty.checkedPassword();
 
         System.Console.WriteLine("Enter your Name:");
-        string name = Console.ReadLine();
+        string userName = Console.ReadLine();
 
-        string greeting = $"Hello: {name}";
+        string greeting = $"Hello: {userName}";
         System.Console.WriteLine(greeting);
 
         System.Console.WriteLine("Enter your age: ");
@@ -20,16 +20,15 @@ class Programm
 
         System.Console.WriteLine("Converting...");
 
-        int age = Convert.ToInt32(ageAsString);
-        System.Console.WriteLine($"Successfully converted! {age}");
+        int userAge = Convert.ToInt32(ageAsString);
+        System.Console.WriteLine($"Successfully converted! {userAge}");
 
-        Animals kescha = new Animals(name: "kescha", userAge: age, animalAge: 3);
+        Animals kescha = new Animals(name: "kescha", age: 3);
 
-        kescha.Age = 3;
-
+        kescha.CalculetAgeDifferenceWithNoReturn(userAge);
         kescha.PrintageDifference();
-        kescha.CompareAges(userAge: age);
-        kescha.TellAboutFriends(userName: name, userAge: age);
+        kescha.CompareAges(userAge);
+        kescha.TellAboutFriends(userName, userAge);
 
 
     }

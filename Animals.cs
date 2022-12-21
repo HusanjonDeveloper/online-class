@@ -14,6 +14,11 @@ namespace online_class.classes
             Age = 0;
             AgeDifference = 0;
         }
+        public Animals(string name, int age)
+        {
+            Name = name;
+            Age = age;
+        }
 
         public Animals(
             string name,
@@ -61,7 +66,11 @@ namespace online_class.classes
                 Console.WriteLine($"{friendsName[itaretion]} is {friendsAge[itaretion]} year old!");
             }
         }
-        private int CalculetAgeDifference(int userAge, int animalAge)
+        public int CalculetAgeDifferenceWithNoReturn(int userAge)
+        {
+            return userAge - Age;
+        }
+        public int CalculetAgeDifference(int userAge, int animalAge)
         {
             return userAge - animalAge;
         }
