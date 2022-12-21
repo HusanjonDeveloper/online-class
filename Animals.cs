@@ -22,8 +22,18 @@ namespace online_class.classes
         {
             Name = name;
             Age = animalAge;
+            CalculetAgeDifferenceWithNoReturn(userAge, animalAge);
+            // AgeDifference = CalculetAgeDifference(userAge, animalAge);
+        }
+        private int CalculetAgeDifference(int userAge, int animalAge)
+        {
+            return userAge - animalAge;
+        }
+        private void CalculetAgeDifferenceWithNoReturn(int userAge, int animalAge)
+        {
             AgeDifference = userAge - animalAge;
         }
+
 
     }
 }
