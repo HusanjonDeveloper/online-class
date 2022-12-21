@@ -7,9 +7,8 @@ class Programm
 {
     static void Main(string[] args)
     {
-        Securty securty = new Securty();
-        securty.checkedPassword();
-
+        System.Console.WriteLine("enter Name:");
+        string name = Console.ReadLine();
 
     }
 }
