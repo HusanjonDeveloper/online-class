@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Takrorlash Keschas    
+
+using System;
 using online_class.classes;
 
 class Programm
@@ -7,5 +9,7 @@ class Programm
     {
         Securty securty = new Securty();
         securty.checkedPassword();
+
+
     }
 }
