@@ -9,11 +9,12 @@ class Programm
         Securty securty = new Securty();
         securty.checkedPassword();
 
+        Animals kescha = new Animals(name: "kescha", age: 3);
+
         System.Console.WriteLine("Enter your Name:");
         string userName = Console.ReadLine();
 
-        string greeting = $"Hello: {userName}";
-        System.Console.WriteLine(greeting);
+        kescha.Greet(userName);
 
         System.Console.WriteLine("Enter your age: ");
         string ageAsString = Console.ReadLine();
@@ -22,8 +23,6 @@ class Programm
 
         int userAge = Convert.ToInt32(ageAsString);
         System.Console.WriteLine($"Successfully converted! {userAge}");
-
-        Animals kescha = new Animals(name: "kescha", age: 3);
 
         kescha.CalculetAgeDifferenceWithNoReturn(userAge);
         kescha.PrintageDifference();

@@ -66,13 +66,22 @@ namespace online_class.classes
                 Console.WriteLine($"{friendsName[itaretion]} is {friendsAge[itaretion]} year old!");
             }
         }
-        public int CalculetAgeDifferenceWithNoReturn(int userAge)
+        public void CalculetAgeDifferenceWithNoReturn(int userAge)
         {
-            return userAge - Age;
+            AgeDifference = userAge - Age;
         }
         public int CalculetAgeDifference(int userAge, int animalAge)
         {
             return userAge - animalAge;
+        }
+
+        public void Greet(string userName)
+        {
+            if (userName == "")
+            {
+                userName = "No Name";
+            }
+            Console.WriteLine($"Hello: {userName}");
         }
         private void CalculetAgeDifferenceWithNoReturn(int userAge, int animalAge)
         {
