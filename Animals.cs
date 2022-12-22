@@ -1,3 +1,5 @@
+using online_class.Enums;
+
 namespace online_class.classes
 {
     public abstract class Animals : IAnimal
@@ -7,7 +9,7 @@ namespace online_class.classes
 
         public int AgeDifference { get; set; }
         public DateTimeOffset CreatedDate { get; set; }
-
+        public PetType Type { get; internal set; }
 
         public Animals()
         {
