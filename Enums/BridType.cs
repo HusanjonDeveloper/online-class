@@ -1,7 +1,8 @@
 namespace online_class.Enums
 {
-    public enum PetType
+    public enum BridType
     {
-        Cat,
+        Dog,
     }
+
 }

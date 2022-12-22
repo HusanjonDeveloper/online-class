@@ -14,13 +14,18 @@ namespace online_class
                 Securty securty = new Securty();
                 securty.checkedPassword();
 
-                Animals kescha = new Bird(name: "kescha", age: 3);
+                Bird kescha = new Bird(name: "kescha", age: 3);
                 Pet kasee = new Pet(name: "Kasee", age: 5);
+
                 kasee.Type = PetType.Cat;
+                kescha.Types = BridType.Dog;
+
 
                 System.Console.WriteLine("kescha was created:" + kescha.CreatedDate);
                 System.Console.WriteLine("kasee was created:" + kasee.CreatedDate);
                 System.Console.WriteLine(kasee.Type);
+                System.Console.WriteLine(kescha.Types);
+
                 System.Console.WriteLine("Enter your Name:");
                 string userName = Console.ReadLine();
 

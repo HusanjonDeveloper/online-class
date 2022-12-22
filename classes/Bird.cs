@@ -1,7 +1,10 @@
+using online_class.Enums;
+
 namespace online_class.classes
 {
     public class Bird : Animals, IAnimal
     {
+        public BridType Types { get; set; }
         public Bird(string name, int age)
          : base(name, age)
         {
