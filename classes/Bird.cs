@@ -14,7 +14,7 @@ namespace online_class.classes
 
         public override void Greet2(string userName)
         {
-            Console.WriteLine();
+            Console.WriteLine("Brid Abstracted metod impelemented");
         }
     }
 }

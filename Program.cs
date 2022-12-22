@@ -25,6 +25,7 @@ namespace online_class
             System.Console.WriteLine("Enter your age: ");
             string ageAsString = Console.ReadLine();
             kasee.Greet2(userName);
+            kescha.Greet2(userName);
 
             System.Console.WriteLine("Converting...");
 

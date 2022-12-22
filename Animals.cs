@@ -60,7 +60,7 @@ namespace online_class.classes
             friendsName[0] = "Kasee";
             friendsName[1] = "Kescha";
             friendsName[2] = userName;
-            int[] friendsAge = { 8, 3, userAge };
+            int[] friendsAge = { 5, 3, userAge };
 
             for (int itaretion = 0; itaretion < friendsName.Length; itaretion++)
             {
