@@ -1,6 +1,6 @@
 namespace online_class.classes
 {
-    public class Animals
+    public abstract class Animals
     {
         public int Age { get; set; }
         public string Name { get; set; }
@@ -30,6 +30,7 @@ namespace online_class.classes
             CalculetAgeDifferenceWithNoReturn(userAge, animalAge);
             // AgeDifference = CalculetAgeDifference(userAge, animalAge);
         }
+        public abstract void Greet2(string userName);
         public void PrintageDifference()
         {
             Console.WriteLine($"the difference between you and {Name}'s age is {AgeDifference}");
@@ -75,7 +76,7 @@ namespace online_class.classes
             return userAge - animalAge;
         }
 
-        public void Greet(string userName)
+        public virtual void Greet(string userName)
         {
             if (userName == "")
             {

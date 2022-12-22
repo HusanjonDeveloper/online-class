@@ -7,6 +7,14 @@ namespace online_class.classes
         {
 
         }
+        public override void Greet(string userName)
+        {
+            Console.WriteLine($"Hello: {userName}");
+        }
 
+        public override void Greet2(string userName)
+        {
+            Console.WriteLine();
+        }
     }
 }

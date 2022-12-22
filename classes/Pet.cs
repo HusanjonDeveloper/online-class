@@ -7,6 +7,14 @@ namespace online_class.classes
         {
 
         }
+        public override void Greet(string userName)
+        {
+            Console.WriteLine($"Meow. {userName}");
+        }
 
+        public override void Greet2(string userName)
+        {
+            Console.WriteLine("Abstracted metod impelemented");
+        }
     }
 }

@@ -11,19 +11,20 @@ namespace online_class
             Securty securty = new Securty();
             securty.checkedPassword();
 
-            Bird kescha = new Bird(name: "kescha", age: 3);
-            Pet kasee = new Pet(name: "Kasee", age: 5);
+            Animals kescha = new Bird(name: "kescha", age: 3);
+            Animals kasee = new Pet(name: "Kasee", age: 5);
 
             System.Console.WriteLine("Enter your Name:");
             string userName = Console.ReadLine();
 
-            System.Console.WriteLine("Greet kase");
+            System.Console.WriteLine("kescha says");
             kescha.Greet(userName);
-            System.Console.WriteLine(" Greet kasee");
+            System.Console.WriteLine(" kasee says");
             kasee.Greet(userName);
 
             System.Console.WriteLine("Enter your age: ");
             string ageAsString = Console.ReadLine();
+            kasee.Greet2(userName);
 
             System.Console.WriteLine("Converting...");
 
