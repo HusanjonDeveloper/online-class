@@ -16,6 +16,9 @@ namespace online_class
                 Animals kescha = new Bird(name: "kescha", age: 3);
                 Animals kasee = new Pet(name: "Kasee", age: 5);
 
+                System.Console.WriteLine("kescha was created:" + kescha.CreatedDate);
+                System.Console.WriteLine("kasee was created:" + kasee.CreatedDate);
+
                 System.Console.WriteLine("Enter your Name:");
                 string userName = Console.ReadLine();
 

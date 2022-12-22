@@ -6,6 +6,7 @@ namespace online_class.classes
         public string Name { get; set; }
 
         public int AgeDifference { get; set; }
+        public DateTimeOffset CreatedDate { get; set; }
 
 
         public Animals()
@@ -13,11 +14,13 @@ namespace online_class.classes
             Name = "No name";
             Age = 0;
             AgeDifference = 0;
+            CreatedDate = DateTimeOffset.Now;
         }
         public Animals(string name, int age)
         {
             Name = name;
             Age = age;
+            CreatedDate = DateTimeOffset.Now;
         }
 
         public Animals(
@@ -29,6 +32,7 @@ namespace online_class.classes
             Age = animalAge;
             CalculetAgeDifferenceWithNoReturn(userAge, animalAge);
             // AgeDifference = CalculetAgeDifference(userAge, animalAge);
+            CreatedDate = DateTimeOffset.Now;
         }
         public abstract void Greet2(string userName);
         public void PrintageDifference()
