@@ -1,6 +1,6 @@
 namespace online_class.classes
 {
-    public abstract class Animals
+    public abstract class Animals : IAnimal
     {
         public int Age { get; set; }
         public string Name { get; set; }

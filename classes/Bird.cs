@@ -1,6 +1,6 @@
 namespace online_class.classes
 {
-    public class Bird : Animals
+    public class Bird : Animals, IAnimal
     {
         public Bird(string name, int age)
          : base(name, age)
