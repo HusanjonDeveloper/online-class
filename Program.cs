@@ -43,6 +43,10 @@ namespace online_class
             {
                 Console.WriteLine($"Erorr was thrown. Message: {FormatException.Message}");
             }
+            catch (Exception Exception)
+            {
+                System.Console.WriteLine("Erorr was thrown. Type is Not know.");
+            }
             Console.WriteLine("Program ended...");
 
             Console.ReadKey();
