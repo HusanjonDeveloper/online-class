@@ -11,7 +11,8 @@ namespace online_class
             Securty securty = new Securty();
             securty.checkedPassword();
 
-            Animals kescha = new Animals(name: "kescha", age: 3);
+            Bird kescha = new Bird(name: "kescha", age: 3);
+            Pet kasee = new Pet(name: "Kasee", age: 5);
 
             System.Console.WriteLine("Enter your Name:");
             string userName = Console.ReadLine();
