@@ -4,7 +4,7 @@ using online_class.classes;
 
 namespace online_class
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
