@@ -17,7 +17,10 @@ namespace online_class
             System.Console.WriteLine("Enter your Name:");
             string userName = Console.ReadLine();
 
+            System.Console.WriteLine("Greet kase");
             kescha.Greet(userName);
+            System.Console.WriteLine(" Greet kasee");
+            kasee.Greet(userName);
 
             System.Console.WriteLine("Enter your age: ");
             string ageAsString = Console.ReadLine();
