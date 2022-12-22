@@ -88,6 +88,5 @@ namespace online_class.classes
             AgeDifference = userAge - animalAge;
         }
 
-
     }
 }
