@@ -2,9 +2,8 @@ namespace online_class.classes
 {
     public class Animals
     {
-        public Animals()
-        {
-
-        }
+        public int Age { get; set; }
+        public string Name { get; set; }
+        public int AgeDifference { get; set; }
     }
 }
