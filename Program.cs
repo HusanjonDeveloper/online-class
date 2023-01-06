@@ -24,8 +24,8 @@ class Programm
 
         kescha.Age = 3;
 
-        System.Console.WriteLine($"kescha.Age {kescha.Age} ");
         System.Console.WriteLine($"kescha.Name {kescha.Name} ");
+        System.Console.WriteLine($"kescha.Age {kescha.Age} ");
 
         int ageDifference = age - kescha.Age;
 
