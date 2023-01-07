@@ -45,6 +45,7 @@ class Programm
         }
 
         System.Console.WriteLine("Let me tel about my freds");
+
         string[] friendsName = new string[3];
         friendsName[0] = "Kasee";
         friendsName[1] = "kescha";
@@ -55,5 +56,6 @@ class Programm
         {
             System.Console.WriteLine($"{friendsName[i]} is {friendsAge[i]} you are older!");
         }
+        Console.ReadKey();
     }
 }

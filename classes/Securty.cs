@@ -5,6 +5,7 @@ namespace online_class.classes
         public void checkedPassword()
         {
             string Password = "";
+
             do
             {
                 System.Console.WriteLine("Enter Pasword: ");
