@@ -12,5 +12,14 @@ namespace online_class.classes
             AgeDifference = 0;
 
         }
+        public Animals
+        (string name,
+            int userAge,
+        int animalAge)
+        {
+            Name = name;
+            Age = animalAge;
+            AgeDifference = userAge - animalAge;
+        }
     }
 }
