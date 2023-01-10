@@ -20,38 +20,17 @@ class Programm
         int age = Convert.ToInt32(ageAsString);
         System.Console.WriteLine($"Ssuccessfully converted! {age}");
 
-        Animals kescha = new Animals(name: "kescha", userAge: age, animalAge: 3);
+        Bird kescha = new Bird(name: "kescha", age: 3);
+        Pet kasee = new Pet(name: "kasee", age: 5);
+        kescha.Greet(userName: name);
+        kasee.Greet(userName: name);
 
         System.Console.WriteLine($"kescha.Name {kescha.Name} ");
         System.Console.WriteLine($"kescha.Age {kescha.Age} ");
-
-        System.Console.WriteLine($"the difference between your and kescha's age is {kescha.AgeDifference}");
-
-        if (age > kescha.Age)
-        {
-            System.Console.WriteLine("you are older");
-        }
-        else if (age == kescha.Age)
-        {
-            System.Console.WriteLine("you are equal");
-        }
-        else
-        {
-            System.Console.WriteLine("you are younger ");
-        }
-
-        System.Console.WriteLine("Let me tel about my freds");
-
-        string[] friendsName = new string[3];
-        friendsName[0] = "Kasee";
-        friendsName[1] = "kescha";
-        friendsName[2] = name;
-        int[] friendsAge = { 20, 19, age };
-
-        for (int i = 0; i < friendsName.Length; i++)
-        {
-            System.Console.WriteLine($"{friendsName[i]} is {friendsAge[i]} you are older!");
-        }
+        kescha.CalculetAgeDifference(userAge: age);
+        kescha.PrintAgeDifference();
+        kescha.ComperAgs(userAge: age);
+        kescha.Tellaboutfrends(userName: name, userAge: age);
         Console.ReadKey();
     }
 }
